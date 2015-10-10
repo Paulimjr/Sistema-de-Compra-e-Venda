@@ -214,7 +214,7 @@ public class TelaProduto extends javax.swing.JInternalFrame {
             }
         }catch(Exception e)
         {
-           e.printStackTrace();
+          JOptionPane.showMessageDialog(null, "Nenhum produto foi especificado");
         }
         
         
@@ -245,11 +245,6 @@ private Produto preencherProduto(){
     prod.setValorc(Float.parseFloat(jtvalorc.getText()));
     prod.setValorv(Float.parseFloat(jtvalorv.getText()));
     prod.setTipo(jttipo.getText());
-    prod.setDescricao(jtdescricao.getText());
-    if(prod == null)
-    {
-        JOptionPane.showMessageDialog(null,"Nenhum dado foi informado");
-    }
     return prod;
     }
     private void limparCampos()

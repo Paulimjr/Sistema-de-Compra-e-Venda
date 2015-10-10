@@ -17,15 +17,33 @@ public class Produto {
     private String descricao;
     private double valorc;
     private double valorv;
+    private int estoque;
     public String categoria;
+
+    public int getEstoque() {
+        return estoque;
+    }
+
+    public void setEstoque(int estoque) {
+        this.estoque = estoque;
+    }
+
+    public String getCategoria() {
+        return categoria;
+    }
+
+    public void setCategoria(String categoria) {
+        this.categoria = categoria;
+    }
     public static int totalDeprodutos;
 
+    
+    
     public Produto(int codigo)
     {
         this.cod = codigo;
         
-    }
-    
+    } 
     public Produto(){
         totalDeprodutos++;
         setCod(totalDeprodutos);

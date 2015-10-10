@@ -3,7 +3,6 @@
   <persistence-unit name="sistemaPU" transaction-type="RESOURCE_LOCAL">
     <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
     <class>view.Cliente</class>
-    <class>view.Venda</class>
     <class>view.Produto</class>
     <properties>
       <property name="javax.persistence.jdbc.url" value="jdbc:postgresql://localhost:5432/sistema"/>

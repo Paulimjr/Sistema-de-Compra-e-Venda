@@ -8,7 +8,6 @@ package control;
 import java.awt.EventQueue;
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
-import view.AlterarProduto;
 import view.TelaCliente;
 import view.TelaProduto;
 import view.TelaVenda;
@@ -81,7 +80,7 @@ public class Principal extends javax.swing.JFrame {
             .addGroup(desktopLayout.createSequentialGroup()
                 .addGap(120, 120, 120)
                 .addComponent(jLabel3)
-                .addContainerGap(340, Short.MAX_VALUE))
+                .addContainerGap(384, Short.MAX_VALUE))
         );
         desktop.setLayer(jLabel3, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
@@ -188,9 +187,7 @@ public class Principal extends javax.swing.JFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addGap(0, 44, Short.MAX_VALUE)
-                .addComponent(desktop, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addComponent(desktop, javax.swing.GroupLayout.Alignment.TRAILING)
         );
 
         pack();
@@ -230,7 +227,7 @@ public class Principal extends javax.swing.JFrame {
     }//GEN-LAST:event_jMenuItem3ActionPerformed
 
     private void jMenuItem7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem7ActionPerformed
-        EventQueue.invokeLater(new Runnable() {
+    /*    EventQueue.invokeLater(new Runnable() {
             public void run() {
                 JFrame frame = new JFrame();
                 frame.setContentPane(new AlterarProduto());
@@ -243,7 +240,8 @@ public class Principal extends javax.swing.JFrame {
                 frame.setResizable(false);
                 
             }
-        });   
+        });  
+            */
     }//GEN-LAST:event_jMenuItem7ActionPerformed
 
     private void jMenu2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jMenu2MouseClicked
@@ -270,7 +268,7 @@ public class Principal extends javax.swing.JFrame {
         TelaVenda venda = new TelaVenda();
         venda.setVisible(true);
         desktop.add(venda);
-          venda.toFront();
+        venda.toFront();
     }//GEN-LAST:event_jMenuItem4ActionPerformed
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
