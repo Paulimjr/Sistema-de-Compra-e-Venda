@@ -17,7 +17,7 @@ import javax.swing.JOptionPane;
  * @author Paulo Cesar
  */
 public class Conexao {
-   
+   private String exo;
     public Statement stmt;
     public ResultSet rs;
     private String driver = "org.postgresql.Driver";
