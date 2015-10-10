@@ -60,7 +60,7 @@ public class Venda {
     
      public double calcularVenda(double valor){
        double valorDaCompra;
-         valorDaCompra = (valor + this.valorVenda);
+         valorDaCompra = (valor - this.valorVenda);
         return valorDaCompra;
     }
     

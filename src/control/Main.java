@@ -19,6 +19,7 @@ public class Main {
             
     }
     Main(){
+        //Aqui esta a alteracao
          try {  
             UIManager.setLookAndFeel("com.sun.java.swing.plaf.nimbus.NimbusLookAndFeel");  
         } catch (Exception e) {  
